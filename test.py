@@ -12,6 +12,6 @@ qc.cx(qr[0:3], anc[0])
 qc.h(qr[0:3])
 qc.barrier(qr)
 qc.measure(qr, cr)
-
+# draw
 qc.draw(output='mpl')
 plt.show()
