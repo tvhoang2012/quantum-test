@@ -1,2 +1,2 @@
-# quantum-test
+# quantum-test: Deutsch-Jozsa Algorithm
  
