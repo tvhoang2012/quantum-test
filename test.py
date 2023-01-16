@@ -67,8 +67,8 @@ def dj_algorithm(oracle, n):
 n = 4
 oracle_gate = dj_oracle('balanced', n)
 dj_circuit = dj_algorithm(oracle_gate, n)
-#dj_circuit.draw(output='mpl')
-#plt.show()
+dj_circuit.draw(output='mpl')
+plt.show()
 aer_sim = Aer.get_backend('aer_simulator')
 transpiled_dj_circuit = transpile(dj_circuit, aer_sim)
 results = aer_sim.run(transpiled_dj_circuit).result()
